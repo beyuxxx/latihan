@@ -1,0 +1,980 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+
+}
+
+ol, ul ,li{
+	list-style: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    line-height: 1;
+    background-color:rgba(0, 0, 0, 0.041);	
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-direction: column;
+    }
+    
+
+/* KIRI */
+.kiri{
+    position: fixed;
+z-index: 1;
+background-color:#fff;
+width: 20%;
+overflow-y: auto;
+height: 100%;
+/* border: 2px solid rgba(0, 0, 0, 0.123); */
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.nav a{
+    gap: 10px;
+align-items: center;
+display: flex;
+}
+
+
+/* ICON */
+.fa-twitter::before {
+    content:  "\f099";
+	font-family: FontAwesome;
+font-size: 2.3em;
+margin-left: 62px;
+
+}
+
+.tweet{
+    width: 85%;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: rgb(0, 162, 255);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.tweet span{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+align-items: center;
+font-size: 17px;
+
+}
+
+.nav ul .tweet{
+    text-align: center;
+}
+
+.nav ul li a{
+    text-decoration:none;
+    padding: 10px 15px;
+color:black;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size:1.1em;
+    }
+
+    .nav ul .fas{
+        font-size:1.1em;
+
+    }
+
+
+    .nav ul .icon{
+        text-decoration:none;
+        padding: 10px 15px;
+color:black;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .kiri .icon{
+        text-decoration:none;
+        padding: 10px 15px;
+color: rgb(0, 162, 255);
+    }
+    .fa-envelope-o::before {
+        content: "\f003";
+        font-family: FontAwesome;
+        font-size:1.1em;
+    }
+ /* ICON  */
+
+
+
+
+
+
+
+
+/* TENGAH */
+
+
+.tengah{
+    order: 0;
+    background-color:#fff;
+    margin-left:270px;
+    width: 50%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+    border-left: 1px solid rgba(0, 0, 0, 0.288);
+    border-right: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+.tengah .header{
+    background-color:#fff;
+    padding: 10px;
+    width: 48.5%;
+    max-height: 100%;
+display: block;
+overflow: hidden;
+position: fixed;
+z-index: 1;
+border-left: 1px solid rgba(0, 0, 0, 0.288);
+border-right: 1px solid rgba(0, 0, 0, 0.288);
+border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+}
+.tengah .banner img{
+    width: 100%;
+}
+.banner{
+    position: relative;
+    margin-top: 56px;
+}
+
+.tengah .arrow .fas{
+color: rgb(0, 195, 255);
+}
+
+.tengah .arrow{
+    position: absolute;
+    left: 2%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tengah .niv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.tengah a{
+    text-decoration: none;
+}
+
+.niv ul{
+    position: relative;
+}
+.niv ul .twitter{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 40px;
+}
+.niv .follow{
+    border: 1px solid rgb(0, 153, 255);
+    padding: 8px 15px;
+    border-radius: 17px;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+font-family: Arial, Helvetica, sans-serif;
+}
+.niv .hari{
+color: black;
+font-size: 14px;
+padding-left: 40px;
+}
+
+.konten{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+}
+
+.konten .logo .fa-twitter::before {
+    content:  "\f099";
+	font-family: FontAwesome;
+font-size: 100px;
+border-radius: 50%;
+position: absolute;
+top: 30%;
+left: 17%;
+border: 4px solid white;
+border-radius: 50%;
+background-color: rgb(0, 162, 255);
+padding: 20px;
+}
+.konten .icon{
+    text-decoration:none;
+
+color: white;
+border: 4px solib white;
+border-radius: 50%;
+display: block;
+}
+
+
+
+.konten .menu-1{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+text-align: center;
+}
+.konten .follow{
+    border: 1px solid rgb(0, 153, 255);
+    padding: 8px 15px;
+    border-radius: 17px;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+font-family: Arial, Helvetica, sans-serif;
+}
+.konten .titik{
+    border: 1px solid rgb(0, 153, 255);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 20px;
+
+    border-radius: 50%;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+font-family: Arial, Helvetica, sans-serif;
+margin: auto;
+}
+
+/* TITLE */
+.title{
+padding-left: 20px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+
+}
+.title h2{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.title span{
+    font-weight: 400;
+    font-size: 15px;
+color: black;
+}
+.banner-menu{
+   padding: 10px;
+   margin-left: 10px;
+}
+.banner-menu .menu-list{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}  
+
+.banner-menu p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.menu-list a{
+    color: rgb(0, 174, 255);
+}
+.banner-menu .follower{
+display: flex;
+gap: 20px;
+}
+.follower a{
+    color: black;
+}
+.follower span{
+    font-size: 15px;
+}
+.follower .flowing{
+    font-weight: bold;
+    font-size: 17px;
+}
+.follower .flower{
+    font-weight: bold;
+    font-size: 17px;
+}
+.sub-jdl{
+    font-weight: 400;
+    font-size: 15px;
+color: black;
+}
+
+.konten-menu{
+    padding: 10px;
+    margin-left: 10px;
+ }
+ .konten-menu .list{
+     display: flex;
+     justify-content: space-between;
+     margin: auto 50px;
+cursor: pointer;
+ }
+ .konten-menu .list a{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.651);
+    font-size: 16px;
+ }
+
+ .konten-menu .list .biru-muda a{
+    color: rgb(0, 174, 255);
+}
+ .konten-menu .list .biru-muda{
+     position: relative;
+    }
+
+ .biru-muda::after{
+     content: " ";
+     height: 10px;
+     width: 100%;
+     border-bottom: 2px solid rgb(0, 174, 255);
+     position: absolute;
+     bottom:-65%;
+     left: 0;
+ }
+
+ /* POSTINGAN */
+ .tengah .imajin img{
+    width:50px;
+    height: 50px;
+     border-radius: 50%;
+     float: left;
+     padding: 5px;
+ }
+.postingan .box1 img{
+    width: 100%;
+ height: 300px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    float: right;
+
+}
+.postingan{
+    box-sizing: border-box;
+    padding: 10px;
+margin: auto 12px;
+border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+}
+
+.postingan .retweet{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+padding-left: 5px;
+position: relative;
+}
+
+.retweet h3{
+    color: rgba(0, 0, 0, 0.363);
+    font-size: 15px;
+    font-weight: 600;
+}
+.retweet a{
+    color: black;
+}
+.retweet .nama{
+    font-size: 14px;
+    font-weight: 600; 
+    padding-right: 5px;  
+}
+.retweet .akun1{
+    font-size: 14px;
+    padding-right: 5px;  
+}
+.retweet p{
+    word-spacing: 2px;
+    font-size: 14px;
+}
+.retweet .titik2{
+    position: absolute;
+    font-weight: 600;
+    font-size: 25px;
+    right: 0;
+    bottom: 35%;
+    color: black;
+    cursor: pointer;
+}
+
+.postingan .box1{
+padding-top: 10px;
+padding: 10px;
+margin-left: 50px;
+}
+.box1 .thumb{
+    display: flex;
+    justify-content: space-between;
+padding: 6px;
+}
+.box1 .thumb li a .likes{
+    padding-left: 10px;
+}
+.box1 .thumb .fas{
+
+color: rgba(0, 0, 0, 0.541);
+    }
+
+    .box1 .thumb a{
+        color: rgba(0, 0, 0, 0.548);
+        font-size: 14px;
+    }
+
+    .postingan .tombol a{
+        margin-top: 20px;
+padding:10px ;
+color: rgb(0, 132, 255);
+margin-left: 50px;
+    }
+
+    /* POSTINGAN 2 */
+    .postingan1{
+        padding: 10px;
+        margin: auto 12px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+        }
+    
+.postingan1 .retweet{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+padding-left: 5px;
+position: relative;
+}
+
+
+.retweet h3{
+    color: rgba(0, 0, 0, 0.363);
+    font-size: 15px;
+    font-weight: 600;
+}
+.retweet a{
+    color: black;
+}
+.retweet .nama{
+    font-size: 14px;
+    font-weight: 600; 
+    padding-right: 5px;  
+}
+.retweet .akun1{
+    font-size: 14px;
+    padding-right: 5px;  
+}
+
+.postingan1 .thumb{
+    display: flex;
+    justify-content: space-between;
+padding: 6px;
+}
+.postingan1 .thumb li a .likes{
+    padding-left: 10px;
+}
+.postingan1 .thumb .fas{
+
+color: rgba(0, 0, 0, 0.541);
+    }
+
+    .postingan1 .thumb a{
+        color: rgba(0, 0, 0, 0.548);
+        font-size: 14px;
+    }
+
+/* POSTINGAN 3 */
+
+.who{
+    padding: 10px;
+    margin: auto 12px;
+border-bottom: 2px solid rgba(0, 0, 0, 0.055);
+}
+.who-jdl{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.055); 
+}
+.who-jdl h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+ }
+.tengah .folow{
+    position: absolute;
+    right: 1%;
+    top: 27%;
+}
+.who .follow{
+    border: 1px solid rgb(0, 153, 255);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+font-family: Arial, Helvetica, sans-serif;
+}
+.who .post{
+    position: relative;
+        display: flex;
+         gap: 5px;
+         padding: 15px;
+         align-items: center;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+}
+.post ul li{
+    padding: 5ox;
+}
+
+.post ul p{
+word-wrap: break-word;
+font-size: 14px;
+margin-top: 10px;
+}
+
+.post .nama{
+    font-weight: 600;
+    font-size: 14px;
+ }
+
+ .post ul a{
+    color: black;
+ }
+
+ .post .hari{
+    font-weight: 200;
+  color: black;
+  font-size: 14px;
+
+ }
+.who .nama{
+        font-weight: 600;
+        font-size: 14px;  
+}
+
+.tengah .moar{
+    padding:20px;
+}
+.tengah .moar a{
+    color: rgb(0, 140, 255);
+}
+
+/* TOPIC */
+
+.topik{
+    margin: 20px auto;
+    border: 2px solid rgba(0, 0, 0, 0.11);
+
+}
+.judul-topik{
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+}
+.judul-topik h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.judul-topik p{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.topik .topik-list{
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+padding: 10px;
+}
+
+
+.topik .topik-list ul::after{
+content: "";
+height: 15px;
+width: 10px;
+border-right: 2px solid rgba(0, 0, 0, 0.336);
+position: absolute;
+top: 31%;
+right:27%;
+align-items: center;
+}
+
+
+.topik .topik-list ul{
+    cursor: pointer;
+    position: relative;
+display: flex;
+gap: 6px;
+align-items: center;
+justify-content: space-around;
+border: 2px solid rgba(0, 0, 0, 0.11);
+padding: 10px;
+border-radius: 15px;
+width: 42%;
+}
+
+.topik-list ul .first .fas{
+    color: rgb(2, 183, 255);
+}
+
+
+
+.topik .topik-list .topik-jdl{
+
+}
+
+
+/* END TENGAH */
+
+/* -------------------------------- */
+
+/* KANAN */
+
+.kanan{
+    right: 0;
+    overflow-y: auto;
+height: 100%;
+    position: fixed;
+background-color:#ffff;
+width: 30%;
+/* border: 2px solid rgba(0, 0, 0, 0.123); */
+
+
+}
+
+.kanan .header{
+    background-color:#fff;
+    padding: 10px;
+
+}
+.form input{
+
+    border-radius: 16px;
+outline: none;
+width: 350px;
+height: 37px;
+	border: none;
+	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.103);
+	 transition: ease-in-out .15s,box-shadow ease-in-out .15s;
+ align-items: center;
+ padding-left: 50px;
+ background-color:rgba(0, 0, 0, 0.075);
+
+}
+
+.form{
+    position: relative;
+    margin-left: 10px;
+}
+
+.header ul .form .search{
+position: absolute;
+top: 29%;
+left: 4%;
+}
+
+.header ul .form .search .fas{
+    background-color: transparent;
+cursor: pointer;
+color:rgba(0, 0, 0, 0.349);
+    }
+
+  .kanan .gambar .box img{
+    width: 110px;
+    height:100px;
+margin: auto;
+  } 
+
+  .kanan .gambar .box.tiga img{
+    border-top-right-radius: 15px;
+  }
+  .kanan .gambar .box.satu1 img{
+    border-top-left-radius: 15px;
+  }
+  .kanan .gambar .box.enam img{
+    border-bottom-right-radius: 15px;
+  }
+  .kanan .gambar .box.empa img{
+    border-bottom-left-radius: 15px;
+  }
+  .kanan .gambar{
+margin: 100px 20px;
+      display: flex;
+box-sizing: border-box;
+      padding: 5px;
+      flex-wrap: wrap;
+  } 
+
+  .kanan .post{
+position: relative;
+display: flex;
+     gap: 5px;
+     padding: 15px;
+     align-items: center;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+cursor: pointer;
+ }
+
+ .kanan .post h2{
+    font-weight: 600;
+    font-size: 14px;
+ }
+
+ .kanan .post span{
+    font-weight: 200;
+  color: black;
+  font-size: 14px;
+
+ }
+
+.kanan .akun{
+    margin: 100px 20px;
+    background-color:rgba(0, 94, 235, 0.059) ;
+    border-radius: 15px;
+}
+ .kanan .imajin img{
+    width:50px;
+    height: 50px;
+     border-radius: 50%;
+ }
+.kanan a{
+    text-decoration: none;
+}
+.kanan .folow{
+    position: absolute;
+    right: 5%;
+
+}
+ .kanan .follow{
+    border: 1px solid rgb(0, 153, 255);
+    padding: 8px 15px;
+    border-radius: 17px;
+    font-weight: bold;
+    color: rgb(0, 153, 255);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.kanan .moar{
+    padding:20px;
+}
+.kanan .moar a{
+    color: rgb(0, 140, 255);
+}
+
+.kanan .judul{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.kanan .jadul{
+    font-weight: 600;
+    font-size: 18px;
+padding:10px;
+margin-left: 10px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+.trending{
+    padding: 10px;
+    margin: -80px 20px;
+    background-color:rgba(0, 94, 235, 0.059) ;
+    border-radius: 15px;
+}
+
+.trending .trend1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+}
+.trending .trend2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+.trending .trend2 .fas{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+
+.kanan .trend1 span{
+    font-weight: 400;
+    font-size: 14px;
+    color:gray;
+ }
+ .kanan .trend1 .tggl{
+    font-weight: 600;
+    font-size: 17px;
+    color: black;
+ }
+
+ 
+.kanan .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px 20px;
+}
+.kanan .info a{
+    text-decoration: none;
+color: black;
+font-size: 14px;
+}
+
+.kanan .info a:hover{
+    text-decoration: underline;
+  
+}
+
+/* END KANAN */
+
+
+/* ----------------------- */
+
+/* MOBILE */
+
+@media (max-width:500px) {
+
+.container{
+    justify-content: space-around;
+flex-direction: column;
+}
+
+.konten .logo .fa-twitter::before {
+    content:  "\f099";
+	font-family: FontAwesome;
+font-size: 50px;
+border-radius: 50%;
+position: absolute;
+top: 27%;
+left: -10%;
+border: 4px solid white;
+border-radius: 50%;
+background-color: rgb(0, 162, 255);
+padding: 20px;
+}
+
+.retweet .titik2{
+    position: absolute;
+    font-weight: 600;
+    font-size: 25px;
+    right: 0;
+    bottom: 58%;
+}
+
+.tengah .folow{
+    position: absolute;
+    right: 1%;
+    top: 17%;
+}
+
+.konten-menu .list{
+gap: 10px;
+}
+.konten-menu .list a{
+   font-size: 15px;
+}
+.follower span{
+    font-size: 14px;
+}
+.follower .flowing{
+    font-weight: bold;
+    font-size: 15px;
+}
+.follower .flower{
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu-list a{
+    font-size: 13px;
+    font-weight: 400;
+}
+.menu-list span{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.topik .topik-list ul::after{
+    content: "";
+    top: 31%;
+    right:23%;
+    align-items: center;
+    }
+
+.tengah{
+    width: 100%;
+    margin-left: 0;
+    order: 0;
+}
+
+
+.tengah .header{
+    width: 95%;
+}
+
+
+.kiri{
+    width: 100%;
+    z-index: 0;
+    order: 1;
+    position: unset;
+
+}
+
+
+.kanan{
+    width: 100%;
+    order: 2;
+    position: unset;
+}
+
+}
+	
